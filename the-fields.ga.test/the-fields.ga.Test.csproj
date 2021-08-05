@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="the-fields.console.chart\**" />
+    <EmbeddedResource Remove="the-fields.console.chart\**" />
+    <None Remove="the-fields.console.chart\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\the-fields.console.chart\the-fields.console.chart.csproj" />
+    <ProjectReference Include="..\the-fields.ga\the-fields.ga.csproj" />
+  </ItemGroup>
+
+</Project>
